@@ -94,7 +94,6 @@ public class AlfrescoGroup {
 	 * @param groupName group name
 	 * @return true if ok
 	 */
-	// FIXME no esta encontrando a los usuarios recien creados
 	public static boolean addUsersToGroup(String userToAdd, String groupName){
 		if (!AlfrescoUser.userExist(userToAdd)) {
 			LOGGER.severe("Error: The user " + userToAdd + " does not exist in Alfresco");
